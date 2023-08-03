@@ -29,7 +29,6 @@ export default defineConfig({
           check: false,
           tsconfig: path.resolve(__dirname, "tsconfig.json"),
           include: [path.resolve(__dirname, "./src")],
-          exclude: ["../**/*.stories.@(ts|tsx)"],
         }),
       ],
     },

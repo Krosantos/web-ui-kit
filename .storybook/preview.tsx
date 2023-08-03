@@ -1,4 +1,6 @@
+import React from "react";
 import type { Preview } from "@storybook/react";
+import { nightTheme } from '../src/theme/night.css'
 
 const preview: Preview = {
   parameters: {
@@ -10,6 +12,10 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => <div className={nightTheme}><Story /></div>
+  ]
 };
+
 
 export default preview;
