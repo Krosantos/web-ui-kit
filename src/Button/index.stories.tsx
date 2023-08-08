@@ -15,5 +15,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-    render: () => <Button>Egg</Button>
+    render: () => <Button variant='primary'>Egg</Button>
 }

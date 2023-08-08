@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "dist/web-ui-kit.umd.js",
+  "sideEffects": false,
   "typings": "dist/index.d.ts",
   "module": "dist/web-ui-kit.es.js",
   "scripts": {
