@@ -28,6 +28,12 @@ export const theme = createThemeContract({
     medium: null,
     strong: null,
   },
+  inputHeight: {
+    compact: null,
+    small: null,
+    medium: null,
+    large: null,
+  },
   background: null,
   borderWidth: null,
   radii: {
@@ -41,4 +47,14 @@ export const theme = createThemeContract({
     display: null,
     body: null,
   },
+  fontSize: {
+    xxxlarge: null,
+    xxlarge: null,
+    xlarge: null,
+    large: null,
+    medium: null,
+    small: null,
+    xsmall: null,
+    xxsmall: null,
+  }
 });

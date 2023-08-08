@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { theme } from "../theme/_contract.css";
-import { recipe } from '@vanilla-extract/recipes'
+import { recipe } from '@vanilla-extract/recipes';
 
 const base = style({
   border: 'none',
@@ -12,6 +12,8 @@ const base = style({
   cursor: 'pointer',
   transition: "all 0.25s ease-in",
   fontFamily: theme.font.body,
+  lineHeight: 1.3,
+  padding: 0,
 });
 
 export const button = recipe({
@@ -51,10 +53,22 @@ export const button = recipe({
       },
     },
     size: {
-      compact: {},
-      small: {},
-      medium: {},
-      large: {}
+      compact: {
+        height: theme.inputHeight.compact,
+        fontSize: theme.fontSize.small,
+      },
+      small: {
+        height: theme.inputHeight.small,
+        fontSize: theme.fontSize.small
+      },
+      medium: {
+        height: theme.inputHeight.medium,
+        fontSize: theme.fontSize.medium
+      },
+      large: {
+        height: theme.inputHeight.large,
+        fontSize: theme.fontSize.large
+      }
     },
     round: {
       true: {
@@ -67,4 +81,12 @@ export const button = recipe({
     size: 'medium',
     round: false
   }
+})
+
+
+export const inner = style({
+  display: 'flex',
+  alignItems: 'center',
+  lineHeight: 1,
+  verticalAlign: 'center'
 })

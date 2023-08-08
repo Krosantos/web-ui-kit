@@ -13,28 +13,28 @@ export const typography = recipe({
     variants: {
         size: {
             xxxlarge: {
-                fontSize: '4.209rem'
+                fontSize: theme.fontSize.xxxlarge
             },
             xxlarge: {
-                fontSize: '3.157rem'
+                fontSize: theme.fontSize.xxlarge
             },
             xlarge: {
-                fontSize: '2.369rem'
+                fontSize: theme.fontSize.xlarge
             },
             large: {
-                fontSize: '1.333rem'
+                fontSize: theme.fontSize.large
             },
             medium: {
-                fontSize: '1rem'
+                fontSize: theme.fontSize.medium
             },
             small: {
-                fontSize: '0.75rem'
+                fontSize: theme.fontSize.small
             },
             xsmall: {
-                fontSize: '0.563rem'
+                fontSize: theme.fontSize.xsmall
             },
             xxsmall: {
-                fontSize: '0.422rem'
+                fontSize: theme.fontSize.xxsmall
             },
         },
         bold: {
