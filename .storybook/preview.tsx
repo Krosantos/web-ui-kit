@@ -1,6 +1,9 @@
 import React from "react";
 import type { Preview } from "@storybook/react";
 import { nightTheme } from '../src/theme/night.css'
+import { theme } from "../src/theme/_contract.css";
+import { assignInlineVars } from '@vanilla-extract/dynamic'
+import './global.css'
 
 const preview: Preview = {
   parameters: {
@@ -13,9 +16,18 @@ const preview: Preview = {
     },
   },
   decorators: [
-    (Story) => <div className={nightTheme}><Story /></div>
+    (Story) => {
+      const withFonts = assignInlineVars({
+        [theme.font.display]: "'Borel', cursive",
+        [theme.font.body]: "'Quicksand', sans-serif",
+      });
+      const inlined = JSON.parse(JSON.stringify(withFonts));
+
+      return (<div className={nightTheme} style={inlined}><Story /></div>)
+    }
   ]
 };
 
 
 export default preview;
+

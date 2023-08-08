@@ -14,9 +14,6 @@ devDependencies:
   '@storybook/addon-links':
     specifier: ^7.2.1
     version: 7.2.1(react-dom@18.2.0)(react@18.2.0)
-  '@storybook/addon-onboarding':
-    specifier: ^1.0.8
-    version: 1.0.8(react-dom@18.2.0)(react@18.2.0)
   '@storybook/blocks':
     specifier: ^7.2.1
     version: 7.2.1(@types/react@18.2.18)(react-dom@18.2.0)(react@18.2.0)
@@ -38,6 +35,9 @@ devDependencies:
   '@vanilla-extract/css':
     specifier: ^1.12.0
     version: 1.12.0
+  '@vanilla-extract/dynamic':
+    specifier: ^2.0.3
+    version: 2.0.3
   '@vanilla-extract/recipes':
     specifier: ^0.5.0
     version: 0.5.0(@vanilla-extract/css@1.12.0)
@@ -3071,21 +3071,6 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/addon-onboarding@1.0.8(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha1-B1y/4dzKe+S2N8VRsWol9VeMU3Q=}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      '@storybook/telemetry': 7.2.1
-      react: 18.2.0
-      react-confetti: 6.1.0(react@18.2.0)
-      react-dom: 18.2.0(react@18.2.0)
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-    dev: true
-
   /@storybook/addon-outline@7.2.1(@types/react@18.2.18)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha1-a23TcaPu0eEfbjTPY5qepF9ycyw=}
     peerDependencies:
@@ -4390,6 +4375,12 @@ packages:
       deepmerge: 4.3.1
       media-query-parser: 2.0.2
       outdent: 0.8.0
+    dev: true
+
+  /@vanilla-extract/dynamic@2.0.3:
+    resolution: {integrity: sha1-RLTgGMvftq89J+c8eLOGF9/kGa0=}
+    dependencies:
+      '@vanilla-extract/private': 1.0.3
     dev: true
 
   /@vanilla-extract/integration@6.2.1:
@@ -8642,16 +8633,6 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /react-confetti@6.1.0(react@18.2.0):
-    resolution: {integrity: sha1-A9xDQNlVrNELF02/MB83SgbinOY=}
-    engines: {node: '>=10.18'}
-    peerDependencies:
-      react: ^16.3.0 || ^17.0.1 || ^18.0.0
-    dependencies:
-      react: 18.2.0
-      tween-functions: 1.2.0
-    dev: true
-
   /react-docgen-typescript@2.2.2(typescript@5.1.6):
     resolution: {integrity: sha1-RhEFXlae3AcSBKrbIOHJPhqxZZw=}
     peerDependencies:
@@ -9607,10 +9588,6 @@ packages:
     dependencies:
       tslib: 1.14.1
       typescript: 5.1.6
-    dev: true
-
-  /tween-functions@1.2.0:
-    resolution: {integrity: sha1-GuOlDnxguz3vd06scHrLynO7w/8=}
     dev: true
 
   /type-check@0.4.0:
