@@ -11,6 +11,7 @@ const base = style({
   borderStyle: 'solid',
   cursor: 'pointer',
   transition: "all 0.25s ease-in",
+  fontFamily: theme.font.body,
 });
 
 export const button = recipe({

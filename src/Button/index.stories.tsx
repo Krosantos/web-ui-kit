@@ -15,5 +15,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-    render: () => <Button variant='primary'>Egg</Button>
+    args: {
+        children: 'Click Me',
+        size: 'medium',
+        variant: 'primary',
+        round: false
+    }
 }
