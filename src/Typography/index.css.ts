@@ -1,69 +1,69 @@
 import { style } from "@vanilla-extract/css";
 import { theme } from "../theme/_contract.css";
-import { recipe } from '@vanilla-extract/recipes'
+import { recipe } from "@vanilla-extract/recipes";
 
 const base = style({
-    fontFamily: theme.font.body,
-    lineHeight: 1.3
+  fontFamily: theme.font.body,
+  lineHeight: 1.3,
 });
 
 export const typography = recipe({
-    base,
+  base,
 
-    variants: {
-        size: {
-            xxxlarge: {
-                fontSize: theme.fontSize.xxxlarge
-            },
-            xxlarge: {
-                fontSize: theme.fontSize.xxlarge
-            },
-            xlarge: {
-                fontSize: theme.fontSize.xlarge
-            },
-            large: {
-                fontSize: theme.fontSize.large
-            },
-            medium: {
-                fontSize: theme.fontSize.medium
-            },
-            small: {
-                fontSize: theme.fontSize.small
-            },
-            xsmall: {
-                fontSize: theme.fontSize.xsmall
-            },
-            xxsmall: {
-                fontSize: theme.fontSize.xxsmall
-            },
-        },
-        bold: {
-            true: {
-                fontWeight: 'bold'
-            }
-        },
-        italic: {
-            true: {
-                fontStyle: 'italic'
-            }
-        },
-        underline: {
-            true: {
-                textDecoration: 'underline'
-            }
-        },
-        strikethrough: {
-            true: {
-                textDecoration: 'line-through'
-            }
-        },
-        display: {
-            true: {
-                fontFamily: theme.font.display
-            }
-        }
+  variants: {
+    size: {
+      xxxlarge: {
+        fontSize: theme.fontSize.xxxlarge,
+      },
+      xxlarge: {
+        fontSize: theme.fontSize.xxlarge,
+      },
+      xlarge: {
+        fontSize: theme.fontSize.xlarge,
+      },
+      large: {
+        fontSize: theme.fontSize.large,
+      },
+      medium: {
+        fontSize: theme.fontSize.medium,
+      },
+      small: {
+        fontSize: theme.fontSize.small,
+      },
+      xsmall: {
+        fontSize: theme.fontSize.xsmall,
+      },
+      xxsmall: {
+        fontSize: theme.fontSize.xxsmall,
+      },
     },
-    defaultVariants: {
-        size: 'medium',
-    }
-})
+    bold: {
+      true: {
+        fontWeight: "bold",
+      },
+    },
+    italic: {
+      true: {
+        fontStyle: "italic",
+      },
+    },
+    underline: {
+      true: {
+        textDecoration: "underline",
+      },
+    },
+    strikethrough: {
+      true: {
+        textDecoration: "line-through",
+      },
+    },
+    display: {
+      true: {
+        fontFamily: theme.font.display,
+      },
+    },
+  },
+  defaultVariants: {
+    size: "medium",
+  },
+});

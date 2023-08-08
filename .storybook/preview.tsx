@@ -1,9 +1,9 @@
 import React from "react";
 import type { Preview } from "@storybook/react";
-import { nightTheme } from '../src/theme/night.css'
+import { nightTheme } from "../src/theme/night.css";
 import { theme } from "../src/theme/_contract.css";
-import { assignInlineVars } from '@vanilla-extract/dynamic'
-import './global.css'
+import { assignInlineVars } from "@vanilla-extract/dynamic";
+import "./global.css";
 
 const preview: Preview = {
   parameters: {
@@ -23,11 +23,13 @@ const preview: Preview = {
       });
       const inlined = JSON.parse(JSON.stringify(withFonts));
 
-      return (<div className={nightTheme} style={inlined}><Story /></div>)
-    }
-  ]
+      return (
+        <div className={nightTheme} style={inlined}>
+          <Story />
+        </div>
+      );
+    },
+  ],
 };
 
-
 export default preview;
-

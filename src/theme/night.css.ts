@@ -40,12 +40,11 @@ export const nightTheme = createTheme(theme, {
     flat: "0px 1px 0px rgba(0, 0, 0, 0.05)",
     soft: "0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25)",
     medium: "0px 0px 2px rgba(0, 0, 0, 0.2), 0px 2px 10px rgba(0, 0, 0, 0.15)",
-    strong:
-      "0px 6px 12px rgba(0, 0, 0, 0.25), 0px 20px 25px rgba(0, 0, 0, 0.15)",
+    strong: "0px 6px 12px rgba(0, 0, 0, 0.25), 0px 20px 25px rgba(0, 0, 0, 0.15)",
   },
   inputHeight: {
     compact: "20px",
-    small: '28px',
+    small: "28px",
     medium: "32px",
     large: "48px",
   },
@@ -63,13 +62,13 @@ export const nightTheme = createTheme(theme, {
     body: "",
   },
   fontSize: {
-    xxxlarge: '4.209rem',
-    xxlarge: '3.157rem',
-    xlarge: '2.369rem',
-    large: '1.333rem',
-    medium: '1rem',
-    small: '0.75rem',
-    xsmall: '0.563rem',
-    xxsmall: '0.422rem',
-  }
+    xxxlarge: "4.209rem",
+    xxlarge: "3.157rem",
+    xlarge: "2.369rem",
+    large: "1.333rem",
+    medium: "1rem",
+    small: "0.75rem",
+    xsmall: "0.563rem",
+    xxsmall: "0.422rem",
+  },
 });

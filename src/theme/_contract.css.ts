@@ -56,5 +56,5 @@ export const theme = createThemeContract({
     small: null,
     xsmall: null,
     xxsmall: null,
-  }
+  },
 });

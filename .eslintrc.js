@@ -3,12 +3,12 @@ module.exports = {
   plugins: ["grapes"],
   settings: {
     react: {
-      version: "detect"
-    }
+      version: "detect",
+    },
   },
   parser: "@typescript-eslint/parser",
   rules: {
     "grapes/no-internal-import": "error",
-    "import/no-anonymous-default-export": "off" // Storybook uses these
-  }
+    "import/no-anonymous-default-export": "off", // Storybook uses these
+  },
 };
