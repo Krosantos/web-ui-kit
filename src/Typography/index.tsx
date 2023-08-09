@@ -28,6 +28,7 @@ const Text: React.FC<TextProps> = ({
   });
 
   if (display) {
+    // If you're reading this for some reason, this isn't semantically appropriate use of headers.
     switch (size) {
       case "xxxlarge":
       case "xxlarge":

@@ -23,49 +23,65 @@ export const button = recipe({
     variant: {
       primary: {
         backgroundColor: theme.surface.primary.default,
+        borderColor: theme.border.primary.default,
         ":disabled": {
           cursor: "not-allowed",
           backgroundColor: theme.surface.primary.disabled,
+          borderColor: theme.border.primary.disabled,
         },
 
         ":hover": {
           backgroundColor: theme.surface.primary.hovered,
+          borderColor: theme.border.primary.hovered,
         },
 
         ":active": {
           backgroundColor: theme.surface.primary.active,
+          borderColor: theme.border.primary.active,
         },
       },
       secondary: {
         backgroundColor: theme.surface.secondary.default,
+        borderColor: theme.border.secondary.default,
         ":disabled": {
           cursor: "not-allowed",
           backgroundColor: theme.surface.secondary.disabled,
+          borderColor: theme.border.secondary.disabled,
         },
 
         ":hover": {
           backgroundColor: theme.surface.secondary.hovered,
+          borderColor: theme.border.secondary.hovered,
         },
 
         ":active": {
           backgroundColor: theme.surface.secondary.active,
+          borderColor: theme.border.secondary.active,
         },
       },
     },
     size: {
       compact: {
+        paddingLeft: 4,
+        paddingRight: 4,
         height: theme.inputHeight.compact,
         fontSize: theme.fontSize.small,
       },
       small: {
+        paddingLeft: 8,
+        paddingRight: 8,
         height: theme.inputHeight.small,
         fontSize: theme.fontSize.small,
       },
       medium: {
+        paddingLeft: 12,
+        paddingRight: 12,
         height: theme.inputHeight.medium,
         fontSize: theme.fontSize.medium,
       },
       large: {
+        paddingLeft: 16,
+        paddingRight: 16,
         height: theme.inputHeight.large,
         fontSize: theme.fontSize.large,
       },

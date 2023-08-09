@@ -20,6 +20,7 @@ export const Default: Story = {
     bold: false,
     inline: false,
     italic: false,
+    underline: false,
     strikethrough: false,
     display: false,
   },
