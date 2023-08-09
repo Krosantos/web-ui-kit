@@ -7,6 +7,9 @@ const base = style({
   color: theme.text.default,
   borderRadius: theme.radii.slight,
   boxShadow: theme.shadow.soft,
+  ":hover": {
+    boxShadow: theme.shadow.medium,
+  },
   borderWidth: theme.borderWidth,
   borderStyle: "solid",
   cursor: "pointer",
