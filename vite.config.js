@@ -4,6 +4,7 @@ import dts from "vite-plugin-dts";
 import path from "path";
 import { defineConfig } from "vite";
 import typescript from "rollup-plugin-typescript2";
+import { peerDependencies } from './package.json'
 
 export default defineConfig({
   plugins: [react(), vanillaExtractPlugin(), dts()],
@@ -14,9 +15,14 @@ export default defineConfig({
       fileName: (format) => `web-ui-kit.${format}.js`,
     },
     rollupOptions: {
-      external: ['react'],
+      external: [Object.keys(peerDependencies)],
       output: {
-        globals: { react: 'react' },
+        globals: {
+          ...Object.keys(peerDependencies).reduce((acc, cur) => {
+            acc[cur] = cur;
+            return acc;
+          }, {}),
+        },
       },
       plugins: [
         typescript({
