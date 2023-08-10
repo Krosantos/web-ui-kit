@@ -4,7 +4,8 @@ import { recipe } from "@vanilla-extract/recipes";
 
 const base = style({
   fontFamily: theme.font.body,
-  lineHeight: 1.3,
+  fontWeight: "normal",
+  lineHeight: 1.5,
 });
 
 export const typography = recipe({

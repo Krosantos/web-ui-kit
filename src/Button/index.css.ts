@@ -17,6 +17,9 @@ const base = style({
   fontFamily: theme.font.body,
   lineHeight: 1.3,
   padding: 0,
+  display: "flex",
+  alignItems: "center",
+  verticalAlign: "center",
 });
 
 export const button = recipe({
@@ -69,24 +72,28 @@ export const button = recipe({
         paddingRight: 4,
         height: theme.inputHeight.compact,
         fontSize: theme.fontSize.small,
+        gap: 4,
       },
       small: {
         paddingLeft: 8,
         paddingRight: 8,
         height: theme.inputHeight.small,
         fontSize: theme.fontSize.small,
+        gap: 8,
       },
       medium: {
         paddingLeft: 12,
         paddingRight: 12,
         height: theme.inputHeight.medium,
         fontSize: theme.fontSize.medium,
+        gap: 12,
       },
       large: {
         paddingLeft: 16,
         paddingRight: 16,
         height: theme.inputHeight.large,
         fontSize: theme.fontSize.large,
+        gap: 16,
       },
     },
     round: {
@@ -100,11 +107,4 @@ export const button = recipe({
     size: "medium",
     round: false,
   },
-});
-
-export const inner = style({
-  display: "flex",
-  alignItems: "center",
-  lineHeight: 1,
-  verticalAlign: "center",
 });

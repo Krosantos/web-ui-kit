@@ -18,7 +18,7 @@ export const Default: Story = {
     children: "Sample Text",
     size: "medium",
     bold: false,
-    inline: false,
+    as: "p",
     italic: false,
     underline: false,
     strikethrough: false,
